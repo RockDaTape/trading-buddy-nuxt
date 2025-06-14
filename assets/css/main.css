@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+main {
+    min-height: 100vh;
+    padding: 2rem;
+    background: #2a292f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
