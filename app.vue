@@ -2,6 +2,7 @@
   <UApp>
     <NuxtRouteAnnouncer />
     <NuxtLayout>
+      <VitePwaManifest />
       <NuxtPage />
     </NuxtLayout>
   </UApp>
