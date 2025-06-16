@@ -1,13 +1,11 @@
 <template>
   <UCard class="counter-card">
-    <div class="text-center py-6">
       <h1>{{ count }}</h1>
       <div class="button-group">
-        <UButton class="reset-btn" variant="subtle" size="xl"  @click="reset">Reset</UButton>
-        <UButton class="decrement-btn" variant="subtle" size="xl"  @click="change(-1)">−1</UButton>
+        <UButton class="reset-btn" color="neutral" variant="outline" size="xl"  @click="reset">Reset</UButton>
+        <UButton class="decrement-btn" color="neutral" variant="outline" size="xl"  @click="change(-1)">−1</UButton>
         <UButton class="increment-btn" variant="subtle" size="xl"  @click="change(1)">+1</UButton>
       </div>
-    </div>
   </UCard>
 </template>
 
@@ -22,9 +20,9 @@ function reset()       { count.value = 0 }
 .counter-card {
   /* sizing & centering */
   width: 100%;
-  max-width: 56rem;        /* Tailwind’s max-w-4xl */
-  margin: 1.5rem auto;     /* my-6 + mx-auto */
-  padding: 0 1rem;         /* px-4 */
+  max-width: 56rem;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
 }
 
 @media (min-width: 640px) { /* sm */
@@ -54,6 +52,7 @@ function reset()       { count.value = 0 }
 h1 {
   color: #2962ff;
   font-size: 5rem;
+  text-align: center;
 }
 
 /* Layout & wrapping */

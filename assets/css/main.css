@@ -6,7 +6,6 @@ main {
     padding: 2rem;
     background: #2a292f;
     color: #fff;
-    display: flex;
     justify-content: center;
     align-items: start;
 }

@@ -2,7 +2,8 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
-
+  ssr: true, // or false if SPA
+  dev: process.env.NODE_ENV !== 'production',
   nitro: {
     preset: 'netlify'   // makes Netlify-compatible output
   },
